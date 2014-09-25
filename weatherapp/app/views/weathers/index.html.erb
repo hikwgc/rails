@@ -1,0 +1,10 @@
+<h1>今日の <%= @weathers[0].area %> の天気は・・・</h1>
+
+<ul>
+    <% @weathers.each do |weather| %>
+    <li><%= weather.weather_summary %></li>
+    <li>最高気温: <%= weather.max_temperature %>℃</li>
+    <li>最低気温: <%= weather.min_temperature %>℃</li>
+    <li>降水確率: <%= weather.rainfallchance %>%</li>
+    <% end %>
+</ul>

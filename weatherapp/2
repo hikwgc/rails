@@ -1,0 +1,7 @@
+<h1>Weathers</h1>
+
+<u1>
+    <% @weathers.each do |weather| %>
+    <li><%= weather.weather_summary %></li>
+    <% end %>
+</ul>
