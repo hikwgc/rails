@@ -1,0 +1,14 @@
+COMMON: &COMMON
+  author: "Hiroshi Kawaguchi"
+
+development:
+  hoge: "dev"
+  <<: *COMMON
+
+test:
+  hoge: "test"
+  <<: *COMMON
+
+production:
+  hoge: "pro"
+  <<: *COMMON
